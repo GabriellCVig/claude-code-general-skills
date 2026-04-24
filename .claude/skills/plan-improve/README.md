@@ -4,6 +4,17 @@ A skill that polishes any drafted plan before showing it to the user for approva
 
 ---
 
+Note that it relies on having the "Clear Context" on plan approval setting set to true.
+
+`settings.local.json`
+```json
+{
+  "showClearContextOnPlanAccept": true
+}
+```
+
+---
+
 What it does: Reads the project's CLAUDE.md for conventions, then runs the plan through 13 checks:
 
 1. Self-containment — embed all conversation context (paths, IDs, decisions) inline
